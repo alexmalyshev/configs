@@ -1,5 +1,6 @@
 EDITOR=vim
 
+alias ll='ls -l'
 alias cls='clear; ls'
 
 alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
