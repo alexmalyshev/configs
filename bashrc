@@ -1,4 +1,4 @@
-EDITOR=vim
+EDITOR=/usr/bin/vim
 
 alias ll='ls -l'
 alias cls='clear; ls'
