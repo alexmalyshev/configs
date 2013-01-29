@@ -1,12 +1,15 @@
-EDITOR=/usr/bin/vim
-
+# ls shortcuts, I'm unfortunately addicted to typing 'cls' now
 alias ll='ls -l'
+alias la='ls -la'
 alias cls='clear; ls'
 
+# SSH shortcuts for CMU
 alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
 alias sshs='ssh amalyshe@shark.ics.cs.cmu.edu'
 alias sshg='ssh amalyshe@ghc18.ghc.andrew.cmu.edu'
+alias sshe='ssh amalyshe@ece002.ece.cmu.edu'
 
+# Quick ways of setting flags for GCC
 alias gccb='gcc -std=c99 -pedantic -Wall -Wextra'
 alias gccf='gccb -fsyntax-only'
 alias gccd='gccb -g'
@@ -17,16 +20,24 @@ alias g++f='g++b -fsyntax-only'
 alias g++d='g++b -g -ftrapv'
 alias g++o='g++b -O3'
 
+# Ditto for clang, but add AddressSanitizer for debug aliases
 alias clangb='clang -std=c99 -pedantic -Wall -Wextra'
 alias clangf='clangb -fsyntax-only'
-alias clangd='clangb -g -ftrapv -fcatch-undefined-behavior -faddress-sanitizer'
+alias clangd='clangb -g -ftrapv -fsanitize=address'
 alias clango='clangb -O3'
 
 alias clangb++='clang++ -std=c++98 -pedantic -Wall -Wextra'
 alias clangf++='clangb++ -fsyntax-only'
-alias clangd++='clangb++ -g -ftrapv -fcatch-undefined-behavior'
+alias clangd++='clangb++ -g -ftrapv -fsanitize=address'
 alias clango++='clangb++ -O3'
 
+# Convenient way to scroll through object files
 objdmp() {
     objdump -d ${1} | less
 }
+
+# Get rid of the default GUI for emacs
+alias emacs='emacs -nw'
+
+# Wrap the SML interpreter in readline, otherwise it's unusable
+alias sml='rlwrap sml'
