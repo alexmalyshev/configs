@@ -11,3 +11,6 @@ set textwidth=80
 
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
+
+" Set SML signature files with the correct filetype
+autocmd BufRead,BufNewFile *.sig set filetype=sml
