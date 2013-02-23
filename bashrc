@@ -39,5 +39,6 @@ objdmp() {
 # Get rid of the default GUI for emacs
 alias emacs='emacs -nw'
 
-# Wrap the SML interpreter in readline, otherwise it's unusable
+# Wrap the SML and OCaml repls in GNU readline, otherwise they're unusable
 alias sml='rlwrap sml'
+alias ocaml='rlwrap ocaml'
