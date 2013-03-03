@@ -2,6 +2,9 @@
 filetype plugin on
 syntax on
 
+" Make sure backspace and delete aren't horribly broken
+set backspace=eol,indent,start
+
 " Always use UNIX file format
 set fileformat=unix
 
