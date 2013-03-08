@@ -8,6 +8,9 @@ set backspace=eol,indent,start
 " Show the current line number and column at the bottom of the terminal
 set ruler
 
+" Use incremental search
+set incsearch
+
 " Always use UNIX file format
 set fileformat=unix
 
