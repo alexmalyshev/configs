@@ -19,9 +19,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Force vim to insert a newline after typing 80 chars
-set textwidth=80
-
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
 
