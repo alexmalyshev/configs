@@ -1,9 +1,12 @@
-" Make sure syntax highlighting is enabled for different file types
+" Make sure syntax highlighting is enabled
 filetype plugin on
 syntax on
 
 " Make sure backspace and delete aren't horribly broken
 set backspace=eol,indent,start
+
+" Show the current line number and column at the bottom of the terminal
+set ruler
 
 " Always use UNIX file format
 set fileformat=unix
