@@ -1,3 +1,9 @@
+# Prompt: [username@hostname currentDir]$
+PS1='[\u@\h \W]\$ '
+PS2='> '
+PS3='> '
+PS4='+ '
+
 # ls shortcuts, I'm unfortunately addicted to typing 'cls' now
 alias ll='ls -l'
 alias la='ls -la'
