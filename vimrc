@@ -2,6 +2,9 @@
 filetype plugin on
 syntax on
 
+" Do not use the vi defaults
+set nocompatible
+
 " Make sure backspace and delete aren't horribly broken
 set backspace=eol,indent,start
 
