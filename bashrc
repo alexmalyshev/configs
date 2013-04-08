@@ -7,7 +7,7 @@ alias cls='clear; ls'
 alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
 alias sshs='ssh amalyshe@shark.ics.cs.cmu.edu'
 alias sshg='ssh amalyshe@ghc18.ghc.andrew.cmu.edu'
-alias sshe='ssh amalyshe@ece002.ece.cmu.edu'
+alias sshe='ssh amalyshe@ece003.ece.cmu.edu'
 
 # Quick ways of setting flags for GCC
 alias gccb='gcc -std=c99 -pedantic -Wall -Wextra'
