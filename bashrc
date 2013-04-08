@@ -1,3 +1,9 @@
+# Prompt: [username@hostname currentDir]$
+PS1='[\u@\h \W]\$ '
+PS2='> '
+PS3='> '
+PS4='+ '
+
 # ls shortcuts, I'm unfortunately addicted to typing 'cls' now
 alias ll='ls -l'
 alias la='ls -la'
@@ -39,5 +45,6 @@ objdmp() {
 # Get rid of the default GUI for emacs
 alias emacs='emacs -nw'
 
-# Wrap the SML interpreter in readline, otherwise it's unusable
+# Wrap the SML and OCaml repls in GNU readline, otherwise they're unusable
 alias sml='rlwrap sml'
+alias ocaml='rlwrap ocaml'

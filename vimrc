@@ -1,6 +1,18 @@
-" Make sure syntax highlighting is enabled for different file types
+" Make sure syntax highlighting is enabled
 filetype plugin on
 syntax on
+
+" Do not use the vi defaults
+set nocompatible
+
+" Make sure backspace and delete aren't horribly broken
+set backspace=eol,indent,start
+
+" Show the current line number and column at the bottom of the terminal
+set ruler
+
+" Use incremental search
+set incsearch
 
 " Always use UNIX file format
 set fileformat=unix
@@ -9,9 +21,6 @@ set fileformat=unix
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-" Force vim to insert a newline after typing 80 chars
-set textwidth=80
 
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
