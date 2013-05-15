@@ -25,7 +25,7 @@ set expandtab
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
 
-" Use tab width of two for SML and Ocaml files
+" Use tab width of two for SML and OCaml files
 autocmd FileType sml,ocaml set tabstop=2 shiftwidth=2
 
 " Set SML signature files with the correct filetype
