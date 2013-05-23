@@ -9,3 +9,5 @@
 [user]
 	name = Alexander Malyshev
 	email = lex.malyshev@gmail.com
+[push]
+	default = simple
