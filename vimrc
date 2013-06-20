@@ -11,6 +11,11 @@ set backspace=eol,indent,start
 " Show the current line number and column at the bottom of the terminal
 set ruler
 
+" Have searches that are in all lowercase be case insensitive, and searches
+" with at least one capital letter as case sensitive
+set ignorecase
+set smartcase
+
 " Use incremental search
 set incsearch
 
