@@ -19,6 +19,9 @@ set smartcase
 " Use incremental search
 set incsearch
 
+" Don't highlight search results
+set nohlsearch
+
 " Always use UNIX file format
 set fileformat=unix
 
