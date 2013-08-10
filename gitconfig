@@ -1,13 +1,9 @@
 [color]
-	status = auto
-	diff = auto
-	branch = auto
-	grep = auto
-	interactive = auto
+    ui = auto
 [core]
-	editor = vim
+    editor = vim
 [user]
-	name = Alexander Malyshev
-	email = lex.malyshev@gmail.com
+    name = Alexander Malyshev
+    email = lex.malyshev@gmail.com
 [push]
-	default = simple
+    default = simple
