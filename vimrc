@@ -30,10 +30,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Convenient way to flip through tabs
-nnoremap <C-PgUp> :tabprev
-nnoremap <C-PgDown> :tabnext
-
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
 
