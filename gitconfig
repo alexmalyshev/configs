@@ -1,9 +1,17 @@
 [color]
     ui = auto
+
 [core]
     editor = vim
+
 [user]
     name = Alexander Malyshev
     email = lex.malyshev@gmail.com
+
+[alias]
+    br = branch
+    stat = status
+    up = pull --rebase
+
 [push]
     default = simple
