@@ -9,7 +9,8 @@
     email = lex.malyshev@gmail.com
 
 [alias]
-    br = branch
+    amend = commit --amend
+    br = branch -v
     stat = status
     up = pull --rebase
 
