@@ -1,0 +1,7 @@
+--exclude=.git
+--exclude=CMake*
+--exclude=*.cmake
+--exclude=Makefile
+--links=no
+--recurse=yes
+--tag-relative=yes
