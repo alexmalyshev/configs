@@ -11,6 +11,7 @@
 [alias]
     amend = commit --amend
     br = branch -v
+    gr = grep -In
     stat = status
     up = pull --rebase
 
