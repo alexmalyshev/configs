@@ -4,10 +4,10 @@ PS2='> '
 PS3='> '
 PS4='+ '
 
-# ls shortcuts, I'm unfortunately addicted to typing 'cls' now
+# ls shortcuts
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
-alias cls='clear; ls'
 
 # SSH shortcuts for CMU
 alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
