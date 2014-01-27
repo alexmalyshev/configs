@@ -25,16 +25,13 @@ set nohlsearch
 " Always use UNIX file format
 set fileformat=unix
 
-" Set tab width to four, and always expand all hard tabs into spaces
-set tabstop=4
-set shiftwidth=4
+" Set tab width to two, and always expand all hard tabs into spaces
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Don't expand tabs in makefiles, they break if they don't have hard tabs
 autocmd FileType make set noexpandtab
-
-" Use tab width of two for SML and OCaml files
-autocmd FileType sml,ocaml set tabstop=2 shiftwidth=2
 
 " Set SML signature files with the correct filetype
 autocmd BufRead,BufNewFile *.sig set filetype=sml
