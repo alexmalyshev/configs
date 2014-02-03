@@ -4,10 +4,8 @@ PS2='> '
 PS3='> '
 PS4='+ '
 
-# ls shortcuts
+# Enable color for ls
 alias ls='ls --color=auto'
-alias ll='ls -l'
-alias la='ls -la'
 
 # SSH shortcuts for CMU
 alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
