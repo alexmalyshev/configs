@@ -1,19 +1,20 @@
 [color]
-    ui = auto
+  ui = auto
 
 [core]
-    editor = vim
+  editor = vim
 
 [user]
-    name = Alexander Malyshev
-    email = lex.malyshev@gmail.com
+  name = Alexander Malyshev
+  email = lex.malyshev@gmail.com
 
 [alias]
-    amend = commit --amend
-    br = branch -v
-    gr = grep -In
-    stat = status
-    up = pull --rebase
+  amend = commit --amend
+  br = branch -v
+  co = checkout
+  gr = grep -In
+  stat = status
+  up = pull --rebase
 
 [push]
-    default = simple
+  default = simple
