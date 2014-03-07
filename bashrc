@@ -37,11 +37,11 @@ alias clango++='clangb++ -O3'
 
 # Convenient way to scroll through object files
 objdmp() {
-    objdump -d ${1} | less
+  objdump -d ${1} | less
 }
 
-# Get rid of the default GUI for emacs
-alias emacs='emacs -nw'
+# Gets rid of the default GUI for emacs
+alias e='emacs -nw'
 
 # Wrap the SML and OCaml repls in GNU readline, otherwise they're unusable
 alias sml='rlwrap sml'
