@@ -8,5 +8,7 @@
 ;; Default to 2 space indents
 (setq-default tab-width 2)
 
+(setq-default show-trailing-whitespace t)
+
 ;; Show row,column numbers
 (column-number-mode)
