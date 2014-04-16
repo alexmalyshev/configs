@@ -27,6 +27,7 @@ set fileformat=unix
 
 " Set tab width to two, and always expand all hard tabs into spaces
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 
