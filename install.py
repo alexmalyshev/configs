@@ -32,12 +32,18 @@ def filter_name(name):
 def main():
   global force
 
+  make_dot = lambda name: os.path.expanduser("~/." + name)
   localnames = filter(filter_name, os.listdir("."))
   filenames = map(os.path.abspath, localnames)
-  dot_filenames = map(lambda name: os.path.expanduser("~/." + name), localnames)
 
-  if sys.argv[-1] == '-f':
-    force = True
+  for arg in sys.argv[1:]:
+    if arg == "-f":
+      force = True
+    elif arg in localnames:
+      copy(make_dot(arg), os.path.abspath(arg))
+      return
+
+  dot_filenames = map(lambda name: os.path.expanduser("~/." + name), localnames)
 
   for destname,sourcename in zip(dot_filenames, filenames):
     copy(destname, sourcename)
