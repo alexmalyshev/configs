@@ -3,12 +3,6 @@
 # Enable color for ls
 alias ls='ls --color=auto'
 
-# SSH shortcuts for CMU
-alias ssha='ssh amalyshe@unix.andrew.cmu.edu'
-alias sshs='ssh amalyshe@shark.ics.cs.cmu.edu'
-alias sshg='ssh amalyshe@ghc18.ghc.andrew.cmu.edu'
-alias sshe='ssh amalyshe@ece003.ece.cmu.edu'
-
 # Quick ways of setting flags for GCC
 alias gccb='gcc -std=c99 -pedantic -Wall -Wextra'
 alias gccf='gccb -fsyntax-only'
