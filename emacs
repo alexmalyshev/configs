@@ -12,3 +12,6 @@
 
 ;; Show row,column numbers
 (column-number-mode)
+
+;; Does anyone actually use this thing?
+(menu-bar-mode -1)
