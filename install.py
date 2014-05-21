@@ -36,10 +36,13 @@ def main():
   localnames = filter(filter_name, os.listdir("."))
   filenames = map(os.path.abspath, localnames)
 
-  for arg in sys.argv[1:]:
-    if arg == "-f":
-      force = True
-    elif arg in localnames:
+  args = sys.argv[1:]
+
+  if "-f" in args:
+    force = True
+
+  for arg in args:
+    if arg in localnames:
       copy(make_dot(arg), os.path.abspath(arg))
       return
 
