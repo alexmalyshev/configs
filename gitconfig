@@ -14,7 +14,7 @@
   co = checkout
   ff = rebase origin/master
   gr = grep -In
-  stat = status
+  st = status
   up = pull --rebase
 
 [push]
