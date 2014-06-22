@@ -2,7 +2,7 @@
   ui = auto
 
 [core]
-  editor = vim
+  editor = emacs -nw
 
 [user]
   name = Alexander Malyshev
