@@ -12,6 +12,9 @@ PS4='+ '
 # Alias for emacs.
 EDITOR='e'
 
+# Disable flow control.
+stty -ixon
+
 # Map C-w to actual backward-kill-word, not terminal's inferior werase.
 stty werase undef
 bind '\C-w: backward-kill-word'
