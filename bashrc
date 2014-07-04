@@ -9,8 +9,7 @@ PS4='+ '
 # Grab aliases.
 . ~/.aliases.bash
 
-# Alias for emacs.
-EDITOR='e'
+EDITOR='emacs -nw'
 
 # Disable flow control.
 stty -ixon
