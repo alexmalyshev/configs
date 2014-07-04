@@ -6,7 +6,12 @@ PS2='> '
 PS3='> '
 PS4='+ '
 
-EDITOR='emacs -nw'
-
-# Grab aliases
+# Grab aliases.
 . ~/.aliases.bash
+
+# Alias for emacs.
+EDITOR='e'
+
+# Map C-w to actual backward-kill-word, not terminal's inferior werase.
+stty werase undef
+bind '\C-w: backward-kill-word'
