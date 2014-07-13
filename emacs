@@ -10,7 +10,8 @@
 (setq-default tab-width 2)
 
 ;; Show row,column numbers.
-(column-number-mode)
+(line-number-mode t)
+(column-number-mode t)
 
 ;; Turn off the pesky menu bar at the top.
 (menu-bar-mode -1)
