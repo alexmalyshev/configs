@@ -1,3 +1,5 @@
+;; -*- emacs-lisp -*-
+
 ;; Save backup and autosave files to the temp directory.
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
