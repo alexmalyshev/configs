@@ -11,6 +11,12 @@ PS4='+ '
 
 EDITOR='emacs -nw'
 
+# Hack for setting a 256 color terminal.
+if [ "$COLORTERM" == "gnome-terminal" ] || [ "$COLORTERM" == "xfce4-terminal" ]
+then
+  TERM=xterm-256color
+fi
+
 # Disable flow control.
 stty -ixon
 
