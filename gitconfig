@@ -12,6 +12,7 @@
   amend = commit --amend
   br = branch -v
   co = checkout
+  cp = cherry-pick
   ff = rebase origin/master
   gr = grep -In
   st = status
