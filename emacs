@@ -4,10 +4,10 @@
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 
-;; Default to 2 space indent, replace tabs with spaces, and highlight trailing
-;; whitespace.
+;; Default to 2 space indent and replace tabs with spaces.
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+(setq-default fill-column 78)
 
 ;; Show row,column numbers.
 (line-number-mode t)
