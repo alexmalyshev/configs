@@ -16,6 +16,10 @@
 ;; Turn off the pesky menu bar at the top.
 (menu-bar-mode -1)
 
+;; Better setting of frame background color.
+(let ((frame-background-mode (if (display-graphic-p) 'light 'dark)))
+  (frame-set-background-mode nil))
+
 ;; Enable the mouse.
 (xterm-mouse-mode t)
 
