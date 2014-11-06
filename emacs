@@ -27,6 +27,9 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-q") 'kill-region)
 
+;; Use ibuffer instead of list-buffers.
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
 ;; Highlight lines past 80 columns in all files, as well as trailing whitespace.
 (require 'whitespace)
 (setq whitespace-style '(face lines-tail trailing))
