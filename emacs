@@ -33,6 +33,9 @@
 ;; Use ibuffer instead of list-buffers.
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; Treat .h files as C++ files.
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
 ;; Highlight lines past 80 columns in all files, as well as trailing whitespace.
 (require 'whitespace)
 (setq whitespace-style '(face lines-tail trailing))
