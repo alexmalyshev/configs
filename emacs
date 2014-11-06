@@ -26,6 +26,9 @@
 ;; Only enable version control for git and mercurial.
 (setq vc-handled-backends '(Git Hg))
 
+;; Automatically revert buffers as they're modified.
+(global-auto-revert-mode 1)
+
 ;; Use C-w for killing words like bash does, and move kill-region to C-q.
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-q") 'kill-region)
