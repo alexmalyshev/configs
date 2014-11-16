@@ -1,3 +1,5 @@
+# -*- gdb-script -*-
+
 # Allow auto-loading of files everywhere.
 set auto-load safe-path /
 
