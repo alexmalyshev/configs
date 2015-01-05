@@ -23,8 +23,8 @@
 ;; Enable the mouse.
 (xterm-mouse-mode t)
 
-;; Only enable version control for git and mercurial.
-(setq vc-handled-backends '(Git Hg))
+;; Disable all version control.
+(setq vc-handled-backends nil)
 
 ;; Automatically revert buffers as they're modified.
 (global-auto-revert-mode 1)
