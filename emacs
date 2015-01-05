@@ -9,6 +9,9 @@
 (setq-default tab-width 2)
 (setq-default fill-column 78)
 
+;; Kill all trailing whitespace upon saving files.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Show row,column numbers.
 (line-number-mode t)
 (column-number-mode t)
