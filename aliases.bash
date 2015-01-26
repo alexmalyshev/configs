@@ -26,11 +26,6 @@ alias clangf++='clangb++ -fsyntax-only'
 alias clangd++='clangb++ -g -ftrapv -fsanitize=address'
 alias clango++='clangb++ -O3'
 
-# Convenient way to scroll through object files.
-function objdmp {
-  objdump -d ${1} | less
-}
-
 # Gets rid of the default GUI for emacs.
 alias e='emacs -nw'
 
