@@ -1,4 +1,6 @@
 --exclude=.git
+--exclude=.hg
+--exclude=.svn
 --exclude=CMake*
 --exclude=*.cmake
 --exclude=Makefile
