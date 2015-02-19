@@ -7,3 +7,5 @@
 --links=no
 --recurse=yes
 --tag-relative=yes
+
+--regex-c++=/^\s*using\s+(\w+)\s=/\1/u,using/
