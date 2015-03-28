@@ -6,6 +6,10 @@ PS2='> '
 PS3='> '
 PS4='+ '
 
+# Increase history size.
+export HISTSIZE=130000
+export HISTFILESIZE=-1
+
 # Grab aliases.
 . ~/.aliases.bash
 
