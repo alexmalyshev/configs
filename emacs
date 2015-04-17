@@ -7,7 +7,7 @@
 ;; Default to 2 space indent and replace tabs with spaces.
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
-(setq-default fill-column 78)
+(setq-default fill-column 80)
 
 ;; Kill all trailing whitespace upon saving files.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
