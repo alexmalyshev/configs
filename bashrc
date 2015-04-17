@@ -22,8 +22,8 @@ then
 fi
 
 # Disable flow control.
-stty -ixon
+stty -ixon &> /dev/null
 
 # Map C-w to actual backward-kill-word, not terminal's inferior werase.
-stty werase undef
-bind '\C-w: backward-kill-word'
+stty werase undef &> /dev/null
+bind '\C-w: backward-kill-word' &> /dev/null
