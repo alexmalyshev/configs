@@ -15,6 +15,10 @@
 (setq rust-indent-offset 2)
 (add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
 
+;; Don't indent on opening a C++ namespace, or on case labels.
+(c-set-offset 'innamespace 0)
+(c-set-offset 'case-label 0)
+
 ;; Kill all trailing whitespace upon saving files.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
