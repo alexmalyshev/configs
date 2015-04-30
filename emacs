@@ -13,6 +13,7 @@
 (setq c-basic-offset 2)
 (setq js-indent-level 2)
 (setq rust-indent-offset 2)
+(add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
 
 ;; Kill all trailing whitespace upon saving files.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
