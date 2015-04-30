@@ -64,6 +64,7 @@
   (add-to-list 'package-archives melpa t))
 
 (when (require 's nil t)
+  ;; Print line comment from current column to fill-column.
   (defun print-delim ()
     (interactive)
     (let ((size (- fill-column (current-column)))
