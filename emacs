@@ -62,3 +62,11 @@
 (package-initialize)
 (let ((melpa '("melpa" . "http://melpa.milkbox.net/packages/")))
   (add-to-list 'package-archives melpa t))
+
+(when (require 's nil t)
+  (defun print-delim ()
+    (interactive)
+    (let ((size (- fill-column (current-column)))
+          (str (s-repeat fill-column (s-trim comment-start))))
+      (insert (substring str 0 size))))
+  (global-set-key (kbd "C-c C-_") 'print-delim))
