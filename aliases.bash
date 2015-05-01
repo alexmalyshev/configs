@@ -3,6 +3,7 @@
 # Enable color for ls and grep.
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias mv='mv -i'
 
 # Quick ways of setting flags for GCC.
 alias gccb='gcc -std=c99 -pedantic -Wall -Wextra'
