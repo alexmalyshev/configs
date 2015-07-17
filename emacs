@@ -10,14 +10,18 @@
 (setq-default fill-column 80)
 
 ;; Language specific indent levels.
-(setq c-basic-offset 2)
-(setq js-indent-level 2)
-(setq rust-indent-offset 2)
+(setq-default c-basic-offset 2)
+(setq-default js-indent-level 2)
+(setq-default rust-indent-offset 2)
 (add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
 
-;; Don't indent on opening a C++ namespace, or on case labels.
+;; Don't indent on opening a C++ namespace, an extern block, or on case labels.
+(c-set-offset 'inextern-lang 0)
 (c-set-offset 'innamespace 0)
 (c-set-offset 'case-label 0)
+
+;; Haskell mode makes us enable indentation manually.
+(add-hook 'haskell-mode-hook 'haskell-indentation-hook)
 
 ;; Kill all trailing whitespace upon saving files.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
