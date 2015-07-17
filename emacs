@@ -33,9 +33,16 @@
 ;; Turn off the pesky menu bar at the top.
 (menu-bar-mode -1)
 
-;; Better setting of frame background color.
-(let ((frame-background-mode (if (display-graphic-p) 'light 'dark)))
-  (frame-set-background-mode nil))
+;; Emacs gets confused as to what color some terminals are.  Manually set the
+;; graphical emacs to light, because it has a white screen, but all the
+;; terminals I use have black backgrounds so set them to dark.
+(defun better-frame-background (frame)
+  (let ((frame-background-mode (if (display-graphic-p) 'light 'dark)))
+    (frame-set-background-mode frame)))
+
+(if (daemonp)
+    (add-to-list 'after-make-frame-functions 'better-frame-background t)
+  (better-frame-background nil))
 
 ;; Enable the mouse.
 (xterm-mouse-mode t)
