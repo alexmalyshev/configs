@@ -53,11 +53,14 @@
 ;; Automatically revert buffers as they're modified.
 (global-auto-revert-mode 1)
 
+;; Always syntax highlight.
+(global-font-lock-mode 1)
+
 ;; Use C-w for killing words like bash does, and move kill-region to C-q.
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-q") 'kill-region)
 
-;; Use ibuffer instead of list-buffers.
+;; Replace list-buffers with ibuffer.
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Treat .h files as C++ files.
