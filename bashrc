@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Prompt: [username@hostname currentDir]
-PS1='[\u@\h \W] '
+# Prompt: [hostname currentTrimmedPath]
+export PROMPT_DIRTIM=3
+PS1='[\h \w] '
 PS2='> '
 PS3='> '
 PS4='+ '
@@ -16,8 +17,7 @@ export HISTFILESIZE=-1
 EDITOR='emacs -nw'
 
 # Hack for setting a 256 color terminal.
-if [ "$TERM" == "xterm" ]
-then
+if [ "$TERM" == "xterm" ]; then
   export TERM=xterm-256color
 fi
 
