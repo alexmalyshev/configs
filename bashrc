@@ -11,6 +11,9 @@ PS4='+ '
 export HISTSIZE=130000
 export HISTFILESIZE=-1
 
+# By default GDB stores its history file in the current working directory.
+export GDBHISTFILE=~/.gdb_history
+
 # Grab aliases.
 . ~/.aliases.bash
 
