@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prompt: [hostname currentTrimmedPath]
-export PROMPT_DIRTIM=3
+export PROMPT_DIRTRIM=3
 PS1='[\h \w] '
 PS2='> '
 PS3='> '
