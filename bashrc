@@ -20,7 +20,7 @@ export GDBHISTFILE=~/.gdb_history
 EDITOR='emacs -nw'
 
 # Hack for setting a 256 color terminal.
-if [ "$TERM" == "xterm" ]; then
+if [ "${TERM}" = "xterm" ]; then
   export TERM=xterm-256color
 fi
 
