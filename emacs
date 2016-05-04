@@ -18,6 +18,9 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
+;; Speed up echoing.
+(setq echo-keystrokes 0.1)
+
 ;; Emacs gets confused as to what color some terminals are.  Manually set the
 ;; graphical emacs to light, because it has a white screen, but all the
 ;; terminals I use have black backgrounds so set them to dark.
