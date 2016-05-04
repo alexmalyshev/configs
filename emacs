@@ -1,5 +1,10 @@
 ;; -*- emacs-lisp -*-
 
+;; Default buffer is an empty file in org-mode.
+(setq inhibit-splash-screen t)
+(setq initial-scratch-message nil)
+(setq initial-major-mode 'org-mode)
+
 ;; Save backup and autosave files to the temp directory.
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
