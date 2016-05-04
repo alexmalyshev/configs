@@ -9,29 +9,6 @@
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 
-;; Default to 2 space indent and replace tabs with spaces.
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
-(setq-default fill-column 80)
-
-;; Language specific indent levels.
-(setq-default c-basic-offset 2)
-(setq-default js-indent-level 2)
-(setq-default rust-indent-offset 2)
-(add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
-
-;; Don't indent on opening a C++ namespace, an extern block, or on case labels.
-(c-set-offset 'inextern-lang 0)
-(c-set-offset 'innamespace 0)
-(c-set-offset 'case-label 0)
-(c-set-offset 'arg-list-intro '+)
-
-;; Haskell mode makes us enable indentation manually.
-(add-hook 'haskell-mode-hook 'haskell-indentation-hook)
-
-;; Kill all trailing whitespace upon saving files.
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 ;; Show row,column numbers.
 (line-number-mode t)
 (column-number-mode t)
@@ -63,6 +40,29 @@
 
 ;; Always syntax highlight.
 (global-font-lock-mode 1)
+
+;; Default to 2 space indent and replace tabs with spaces.
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq-default fill-column 80)
+
+;; Language specific indent levels.
+(setq-default c-basic-offset 2)
+(setq-default js-indent-level 2)
+(setq-default rust-indent-offset 2)
+(add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
+
+;; Don't indent on opening a C++ namespace, an extern block, or on case labels.
+(c-set-offset 'inextern-lang 0)
+(c-set-offset 'innamespace 0)
+(c-set-offset 'case-label 0)
+(c-set-offset 'arg-list-intro '+)
+
+;; Haskell mode makes us enable indentation manually.
+(add-hook 'haskell-mode-hook 'haskell-indentation-hook)
+
+;; Kill all trailing whitespace upon saving files.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Use C-w for killing words like bash does, and move kill-region to C-q.
 (global-set-key (kbd "C-w") 'backward-kill-word)
