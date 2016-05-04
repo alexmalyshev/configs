@@ -36,8 +36,10 @@
 (line-number-mode t)
 (column-number-mode t)
 
-;; Turn off the pesky menu bar at the top.
+;; Turn off all menu bars that I never use.
 (menu-bar-mode -1)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
 
 ;; Emacs gets confused as to what color some terminals are.  Manually set the
 ;; graphical emacs to light, because it has a white screen, but all the
