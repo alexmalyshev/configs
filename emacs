@@ -1,5 +1,9 @@
 ;; -*- emacs-lisp -*-
 
+;; Set up identity correctly.
+(setq user-full-name "Alex Malyshev")
+(setq user-mail-address "lex.malyshev@gmail.com")
+
 ;; Default buffer is an empty file in org-mode.
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message nil)
