@@ -1,8 +1,55 @@
 ;; -*- emacs-lisp -*-
 
+(require 'cl-lib)
+
 ;; Set up identity correctly.
 (setq user-full-name "Alex Malyshev")
 (setq user-mail-address "lex.malyshev@gmail.com")
+
+;; Add MELPA packages.
+(require 'package)
+(package-initialize)
+(let ((melpa '("melpa" . "http://melpa.milkbox.net/packages/")))
+  (add-to-list 'package-archives melpa t))
+
+(defconst my-packages
+  '(bison-mode
+    brainfuck-mode
+    cargo
+    cmake-mode
+    coffee-mode
+    csharp-mode
+    d-mode
+    erlang
+    git-commit-mode
+    git-rebase-mode
+    gitconfig-mode
+    go-mode
+    haskell-mode
+    helm
+    lua-mode
+    nyan-mode
+    php-mode
+    rust-mode
+    s
+    sml-mode
+    systemd
+    tuareg
+    vimrc-mode
+    xterm-color))
+
+;; Check that everything in my-packages is installed.
+(defun my-packages-installed-p ()
+  (cl-loop for pkg in my-packages
+	   when (not (package-installed-p pkg)) do (cl-return nil)
+	   finally (cl-return t)))
+
+;; Do a first time install of my packages.
+(unless (my-packages-installed-p)
+  (package-refresh-contents)
+  (dolist (pkg my-packages)
+    (when (not (package-installed-p pkg))
+      (package-install pkg))))
 
 ;; Default buffer is an empty file in org-mode.
 (setq inhibit-splash-screen t)
@@ -90,17 +137,10 @@
 (setq whitespace-style '(face lines-tail trailing))
 (global-whitespace-mode t)
 
-;; Add MELPA packages.
-(require 'package)
-(package-initialize)
-(let ((melpa '("melpa" . "http://melpa.milkbox.net/packages/")))
-  (add-to-list 'package-archives melpa t))
-
-(when (require 's nil t)
-  ;; Print line comment from current column to fill-column.
-  (defun print-delim ()
-    (interactive)
-    (let ((size (- fill-column (current-column)))
-          (str (s-repeat fill-column (s-trim comment-start))))
-      (insert (substring str 0 size))))
-  (global-set-key (kbd "C-c C-_") 'print-delim))
+;; Print line comment from current column to fill-column.
+(defun print-delim ()
+  (interactive)
+  (let ((size (- fill-column (current-column)))
+        (str (s-repeat fill-column (s-trim comment-start))))
+    (insert (substring str 0 size))))
+(global-set-key (kbd "C-c C-_") 'print-delim)
