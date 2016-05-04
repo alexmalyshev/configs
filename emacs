@@ -18,8 +18,12 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
-;; Speed up echoing.
+;; Speed up echoing.  Can't be 0 as that means to turn it off.
 (setq echo-keystrokes 0.1)
+
+;; Always show matching parens/braces/brackets, and speed them up too.
+(setq show-paren-delay 0)
+(show-paren-mode t)
 
 ;; Emacs gets confused as to what color some terminals are.  Manually set the
 ;; graphical emacs to light, because it has a white screen, but all the
