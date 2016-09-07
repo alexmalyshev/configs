@@ -97,9 +97,13 @@
 (global-whitespace-mode t)
 
 ;; Print line comment from current column to fill-column.
+(require 's)
 (defun print-delim ()
   (interactive)
   (let ((size (- fill-column (current-column)))
         (str (s-repeat fill-column (s-trim comment-start))))
     (insert (substring str 0 size))))
 (global-set-key (kbd "C-c C-_") 'print-delim)
+
+;; Shortcut for sorting lines.
+(global-set-key (kbd "C-c s") 'sort-lines)
