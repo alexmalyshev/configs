@@ -107,3 +107,21 @@
 
 ;; Shortcut for sorting lines.
 (global-set-key (kbd "C-c s") 'sort-lines)
+
+;; Keywords added in C++11.
+(defconst new-cxx-keywords
+  '("alignas" "alignof" "constexpr" "decltype" "final" "noexcept" "nullptr"
+    "override" "static_assert" "thread_local"))
+
+;; Types added in C++11.
+(defconst new-cxx-types '("nullptr_t" "char8_t" "char16_t" "char32_t"))
+
+(defun font-lock-str (kwds)
+  (concat "\\<\\(" (mapconcat (lambda (kwd) kwd) kwds "\\|") "\\)\\>"))
+
+;; Add highlighting for C++11 keywords and types.
+(let ((kwds (font-lock-str new-cxx-keywords))
+      (types (font-lock-str new-cxx-types)))
+  (font-lock-add-keywords 'c++-mode
+                          `((,kwds . font-lock-keyword-face)
+                            (,types . font-lock-type-face))))
