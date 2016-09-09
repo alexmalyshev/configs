@@ -6,9 +6,9 @@
 
 ;; Add MELPA packages.
 (require 'package)
-(package-initialize)
 (let ((melpa '("melpa" . "http://melpa.milkbox.net/packages/")))
   (add-to-list 'package-archives melpa t))
+(package-initialize)
 
 ;; Default buffer is an empty file in org-mode.
 (setq inhibit-splash-screen t)
