@@ -25,8 +25,10 @@
 
 ;; Turn off all menu bars that I never use.
 (menu-bar-mode -1)
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
+(when (fboundp `tool-bar-mode)
+  (tool-bar-mode -1))
 
 ;; Speed up echoing.  Can't be 0 as that means to turn it off.
 (setq echo-keystrokes 0.1)
