@@ -10,6 +10,8 @@ elif [ "${PLATFORM}" = 'Darwin' ]; then
 fi
 
 alias grep='grep --color=auto'
+
+# Require intervention when mv tries to overwrite a file.
 alias mv='mv -i'
 
 # Get rid of the default GUI for emacs.
