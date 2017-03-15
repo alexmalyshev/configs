@@ -76,6 +76,7 @@
 (c-set-offset 'innamespace 0)
 (c-set-offset 'case-label 0)
 (c-set-offset 'arglist-intro '+)
+(c-set-offset 'arglist-close 0)
 
 ;; Haskell mode makes us enable indentation manually.
 (add-hook 'haskell-mode-hook 'haskell-indentation-hook)
