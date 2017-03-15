@@ -1,7 +1,14 @@
 #!/bin/bash
 
 # Enable color for ls and grep.
-alias ls='ls --color=auto'
+
+PLATFORM=$(uname)
+if [ "${PLATFORM}" = 'Linux' ]; then
+    alias ls='ls --color=auto'
+elif [ "${PLATFORM}" = 'Darwin' ]; then
+    alias ls='ls -G'
+fi
+
 alias grep='grep --color=auto'
 alias mv='mv -i'
 
