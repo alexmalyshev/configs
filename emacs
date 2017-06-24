@@ -60,6 +60,9 @@
 ;; Always syntax highlight.
 (global-font-lock-mode 1)
 
+;; Enable sub-words.
+(subword-mode 1)
+
 ;; Default to 2 space indent and replace tabs with spaces.
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
