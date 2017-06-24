@@ -111,6 +111,9 @@
 ;; Shortcut for sorting lines.
 (global-set-key (kbd "C-c s") 'sort-lines)
 
+;; Shortcut for clang formatting a region.
+(global-set-key (kbd "C-c r") 'clang-format-region)
+
 ;; Keywords added in C++11.
 (defconst new-cxx-keywords
   '("alignas" "alignof" "constexpr" "decltype" "final" "noexcept" "nullptr"
