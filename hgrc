@@ -1,0 +1,21 @@
+[commands]
+status.relative = True
+
+[ui]
+color = yes
+editor = emacs -nw
+username = Alex Malyshev <lex.malyshev@gmail.com>
+
+[pager]
+pager = less -FRX
+
+[extensions]
+histedit =
+purge =
+rebase =
+shelve =
+strip =
+
+[alias]
+# No backups by default.
+revert = revert -C
