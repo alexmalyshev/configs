@@ -30,3 +30,9 @@ stty -ixon &> /dev/null
 # Map C-w to actual backward-kill-word, not terminal's inferior werase.
 stty werase undef &> /dev/null
 bind '\C-w: backward-kill-word' &> /dev/null
+
+# Register ${HOME}/bin in PATH if it exists.
+HOME_BIN="${HOME}/bin"
+if [ -d "${HOME_BIN}" ]; then
+  PATH="${HOME_BIN}:${PATH}"
+fi
