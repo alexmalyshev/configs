@@ -17,6 +17,7 @@ alias mv='mv -i'
 # Get rid of the default GUI for emacs.
 alias e='emacs -nw'
 alias emacs='emacs -nw'
+alias ec='emacsclient -nw'
 
 # Wrap the SML and OCaml repls in GNU readline, otherwise they're unusable.
 alias sml='rlwrap sml'
