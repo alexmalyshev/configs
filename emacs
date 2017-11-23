@@ -69,11 +69,11 @@
 (setq-default fill-column 80)
 
 ;; Language specific indent levels.
-(setq-default c-basic-offset 2)
-(setq-default js-indent-level 2)
-(setq-default rust-indent-offset 2)
-(add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
+(setq c-basic-offset 2)
+(setq js-indent-level 2)
 (setq lua-indent-level 2)
+(setq rust-indent-offset 2)
+(add-hook 'php-mode-hook (lambda () (setq c-basic-offset 2)))
 
 ;; Don't indent on opening a C++ namespace, an extern block, or on case labels.
 (c-set-offset 'inextern-lang 0)
@@ -118,4 +118,3 @@
 ;; Shortcuts for clang formatting.
 (global-set-key (kbd "C-c r") 'clang-format-region)
 (global-set-key (kbd "C-c b") 'clang-format-buffer)
-
