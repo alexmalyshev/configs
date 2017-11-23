@@ -4,9 +4,9 @@
 
 PLATFORM=$(uname)
 if [ "${PLATFORM}" = 'Linux' ]; then
-    alias ls='ls --color=auto'
+  alias ls='ls --color=auto'
 elif [ "${PLATFORM}" = 'Darwin' ]; then
-    alias ls='ls -G'
+  alias ls='ls -G'
 fi
 
 alias grep='grep --color=auto'

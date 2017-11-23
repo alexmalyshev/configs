@@ -15,7 +15,7 @@ export HISTFILESIZE=-1
 export GDBHISTFILE=~/.gdb_history
 
 # Grab aliases.
-. ~/.aliases.bash
+source ~/.aliases.bash
 
 EDITOR='emacs -nw'
 
