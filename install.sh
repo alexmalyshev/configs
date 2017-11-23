@@ -7,7 +7,7 @@ if [ "${1}" = '-f' ]; then
   FORCE=1
 fi
 
-CONFIGS="$(ls | grep -v install | grep -v README)"
+CONFIGS=$(ls | grep -v -e install -e README)
 
 LN_ARGS='-s'
 if [ -n "${FORCE}" ]; then
