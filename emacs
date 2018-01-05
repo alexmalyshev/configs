@@ -118,5 +118,9 @@
 (global-set-key (kbd "C-c s") 'sort-lines)
 
 ;; Shortcuts for clang formatting.
-(global-set-key (kbd "C-c r") 'clang-format-region)
-(global-set-key (kbd "C-c b") 'clang-format-buffer)
+(add-hook 'c++-mode-hook
+          (lambda () (local-set-key (kbd "C-c r")
+          'clang-format-region)))
+(add-hook 'c++-mode-hook
+          (lambda () (local-set-key (kbd "C-c b")
+          'clang-format-buffer)))
