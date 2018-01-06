@@ -1,3 +1,5 @@
+" -*- vimrc -*-
+
 " Make sure syntax highlighting is enabled.
 filetype plugin on
 syntax on

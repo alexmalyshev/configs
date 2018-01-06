@@ -1,3 +1,5 @@
+# -*- hgrc -*-
+
 [commands]
 status.relative = True
 
