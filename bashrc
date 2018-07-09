@@ -33,8 +33,16 @@ stty -ixon &> /dev/null
 stty werase undef &> /dev/null
 bind '\C-w: backward-kill-word' &> /dev/null
 
+# Function that prepends a directory to PATH if it doesn't already exist in it.
+function prepend_path() {
+  if [[ ! "${PATH}" =~ "${1}" ]]; then
+    export PATH="${1}:${PATH}"
+  fi
+}
+export -f prepend_path
+
 # Register ${HOME}/bin in PATH if it exists.
 HOME_BIN="${HOME}/bin"
 if [ -d "${HOME_BIN}" ]; then
-  PATH="${HOME_BIN}:${PATH}"
+  prepend_path "${HOME_BIN}"
 fi
