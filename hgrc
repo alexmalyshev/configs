@@ -1,5 +1,15 @@
 # -*- hgrc -*-
 
+[alias]
+last = log --limit=1
+pdiff = diff --rev .^
+pst = status --rev .^
+reball = rebase -b '(::bookmark() and draft()) - master::' -d master
+remast = rebase -d master
+
+# No backups by default.
+revert = revert -C
+
 [commands]
 status.relative = True
 
@@ -17,7 +27,3 @@ purge =
 rebase =
 shelve =
 strip =
-
-[alias]
-# No backups by default.
-revert = revert -C
