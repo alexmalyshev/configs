@@ -16,6 +16,7 @@ status.relative = True
 [ui]
 color = yes
 editor = emacs -nw
+interface = curses
 username = Alex Malyshev <lex.malyshev@gmail.com>
 
 [pager]
