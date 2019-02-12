@@ -5,6 +5,7 @@
 
 [core]
   editor = emacs -nw
+  pager = less -FX
 
 [user]
   name = Alexander Malyshev
