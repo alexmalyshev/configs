@@ -17,9 +17,9 @@ export GDBHISTFILE=~/.gdb_history
 # Grab aliases.
 source ~/.aliases.bash
 
-# Editor variables.  Mercurial doesn't like the `-nw` for some reason.
+# Editor variables.
 export EDITOR='emacs -nw'
-export HGEDITOR='emacs'
+export HGEDITOR='emacs -nw'
 
 # Hack for setting a 256 color terminal.
 if [ "${TERM}" = "xterm" ]; then
