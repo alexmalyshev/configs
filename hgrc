@@ -17,6 +17,7 @@ status.relative = True
 color = yes
 editor = emacs -nw
 interface = curses
+merge = internal:merge3
 username = Alex Malyshev <lex.malyshev@gmail.com>
 
 [pager]
