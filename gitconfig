@@ -4,7 +4,7 @@
   ui = auto
 
 [core]
-  editor = emacs -nw
+  editor = emacsclient -a '' -nw
   pager = less -FX
 
 [user]
