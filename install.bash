@@ -8,7 +8,7 @@ if [ "${1}" = '-f' ]; then
 fi
 
 declare -A CONFIGS=(
-  [alacritty.yml]='.config/alacritty/alacritty.yml'
+  [alacritty.toml]='.config/alacritty/alacritty.toml'
   [aliases.bash]='.aliases.bash'
   [bashrc]='.bashrc'
   [config.fish]='.config/fish/config.fish'
