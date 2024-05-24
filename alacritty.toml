@@ -1,8 +1,8 @@
 [font]
-size = 10
+size = 14
 
 [font.normal]
-family = "Monaspace Neon"
+family = "Monaspace Neon Var"
 style = "Regular"
 
 [window]
