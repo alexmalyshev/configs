@@ -22,6 +22,7 @@ declare -A CONFIGS=(
   [i3status_config]='.config/i3status/config'
   [lesskey]='.lesskey'
   [tmux.conf]='.tmux.conf'
+  [update-all.fish]='.config/fish/functions/update-all.fish'
   [vimrc]='.vimrc'
 )
 
