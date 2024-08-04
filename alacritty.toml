@@ -6,4 +6,4 @@ family = "Monaspace Neon Var"
 style = "Regular"
 
 [window]
-startup_mode = "Fullscreen"
+startup_mode = "Maximized"
