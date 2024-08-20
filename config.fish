@@ -5,3 +5,12 @@ if status is-interactive
         exec tmux
     end
 end
+
+# Overwrite some programs with newer variants.
+
+if type -q bat
+    alias less bat
+end
+if type -q eza
+    alias ls eza
+end
