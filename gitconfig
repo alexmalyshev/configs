@@ -8,7 +8,7 @@
   pager = less -FX
 
 [user]
-  name = Alexander Malyshev
+  name = Alex Malyshev
   email = lex.malyshev@gmail.com
 
 [alias]
