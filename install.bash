@@ -11,6 +11,7 @@ declare -A CONFIGS=(
   [alacritty.toml]='.config/alacritty/alacritty.toml'
   [aliases.bash]='.aliases.bash'
   [bashrc]='.bashrc'
+  [chad.fish]='.config/fish/functions/chad.fish'
   [config.fish]='.config/fish/config.fish'
   [ctags]='.ctags'
   [e.fish]='.config/fish/functions/e.fish'
