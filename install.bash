@@ -20,6 +20,7 @@ declare -A CONFIGS=(
   [hgrc]='.hgrc'
   [i3_config]='.config/i3/config'
   [i3status_config]='.config/i3status/config'
+  [jj-update-all.fish]='.config/fish/functions/jj-update-all.fish'
   [lesskey]='.lesskey'
   [tmux.conf]='.tmux.conf'
   [update-all.fish]='.config/fish/functions/update-all.fish'
